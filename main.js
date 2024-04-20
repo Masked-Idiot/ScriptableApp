@@ -1,4 +1,6 @@
-export files = FileManager.local()
-export function main(){
-	console.log(files.documentsDirectory())
-}
+export const app = {
+	files: FileManager.local(),
+	run: function(){
+		console.log(this.files.documentsDirectory())
+	}
+};
